@@ -5,8 +5,7 @@ buildscript {
 		seurityVersion = '2.0.7.RELEASE'
     }
     repositories {
-        mavenCentral()
-        jcenter()
+        maven { url "http://192.168.1.34:8081/repository/public/" }
     }
     
     dependencies {
@@ -26,8 +25,7 @@ jar {
 }
 
 repositories { 
-	mavenCentral() 
-	jcenter()
+	maven { url "http://192.168.1.34:8081/repository/public/" }
 }
 dependencies {
 	compile("org.springframework.boot:spring-boot-starter-web:${project.bootVersion}")    
